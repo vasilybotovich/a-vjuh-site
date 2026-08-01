@@ -1,0 +1,24 @@
+.logo-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: -.05em;
+}
+
+.logo-brand img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.logo-brand span {
+  color: var(--text);
+  font-size: 1em;
+}
+
+.footer-inner .logo-brand img {
+  width: 54px;
+  height: 54px;
+}
