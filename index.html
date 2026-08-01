@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Агентство продаж «Вжух»: исследуем рынок, формируем предложение и выстраиваем системные B2B-продажи.">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>Вжух — агентство системных продаж</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.dataset.theme = localStorage.getItem('vjuh-theme') || 'light';
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Вжух — на главную">ВЖУХ<span aria-hidden="true">↗</span></a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#services">Что делаем</a><a href="#process">Как работаем</a><a href="#pilot">Пилот</a><a href="#team">Команда</a><a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <div class="theme-switch" role="group" aria-label="Цветовая тема">
+          <button type="button" data-set-theme="light" aria-pressed="true"><span>☀</span><span class="theme-label">Светлая</span></button>
+          <button type="button" data-set-theme="dark" aria-pressed="false"><span>☾</span><span class="theme-label">Тёмная</span></button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Открыть меню"><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация" hidden>
+      <a href="#services">Что делаем</a><a href="#process">Как работаем</a><a href="#pilot">Пилот</a><a href="#team">Команда</a><a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Агентство системных продаж</p>
+          <h1>Находим точки роста<br>и превращаем их<br><span>в продажи</span></h1>
+          <p class="hero-text">Исследуем рынок, создаём предложение, находим потенциальных клиентов и ведём их до предметных переговоров.</p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#contacts">Обсудить задачу <span>→</span></a>
+            <a class="text-link" href="#process">Как это работает <span>↓</span></a>
+          </div>
+        </div>
+        <div class="growth-map reveal" aria-hidden="true">
+          <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="pulse"></div>
+          <svg viewBox="0 0 620 460" role="img">
+            <path class="path-muted" d="M0 398 C145 395, 175 344, 268 329 S414 258, 474 173 S548 91, 610 31"/>
+            <path class="path-main" d="M-10 422 C105 411, 186 385, 260 337 S391 282, 447 203 S531 94, 612 35"/>
+            <g class="nodes"><circle cx="260" cy="337" r="8"/><circle cx="447" cy="203" r="8"/><circle cx="531" cy="94" r="8"/></g>
+            <path class="arrow" d="M592 31 L614 32 L606 53"/>
+          </svg>
+        </div>
+      </div>
+      <div class="container proof-strip reveal">
+        <div><b>01</b><span><strong>Фокус на результате</strong>Рост продаж, а не отчётов</span></div>
+        <div><b>02</b><span><strong>Прозрачность</strong>План, метрики и воронка</span></div>
+        <div><b>03</b><span><strong>Быстрый запуск</strong>Первые действия от 3 дней</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">Что мы делаем</p><h2>Берём продажи в работу<br>как систему</h2><p>От понимания рынка до управляемой воронки и переговоров.</p></div>
+        <div class="card-grid services-grid">
+          <article class="card reveal"><span class="card-icon">◎</span><h3>Аналитика и стратегия</h3><p>Изучаем рынок, конкурентов и аудиторию. Находим сегменты с реальным потенциалом.</p></article>
+          <article class="card reveal"><span class="card-icon">⌁</span><h3>Лидогенерация</h3><p>Формируем целевые базы, находим принимающих решения и проверяем релевантность.</p></article>
+          <article class="card reveal"><span class="card-icon">•••</span><h3>Скрипты и продажи</h3><p>Создаём персональные обращения, ведём диалоги и повторные касания.</p></article>
+          <article class="card reveal"><span class="card-icon">⚙</span><h3>CRM и процессы</h3><p>Настраиваем воронку, статусы, регламенты и контроль следующего действия.</p></article>
+          <article class="card card-accent reveal"><span class="card-icon">↗</span><h3>Аналитика и рост</h3><p>Считаем конверсию, усиливаем работающие связки и отключаем лишнее.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="fit">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">Кому подходим</p><h2>Когда продажи нужны<br>не когда-нибудь, а сейчас</h2></div>
+        <div class="fit-grid">
+          <article class="fit-card reveal"><b>01</b><h3>B2B-компаниям</h3><p>Со сложным продуктом, длинным циклом сделки и высоким чеком.</p></article>
+          <article class="fit-card reveal"><b>02</b><h3>Новым продуктам</h3><p>Когда нужно проверить спрос до серьёзных вложений в масштабирование.</p></article>
+          <article class="fit-card reveal"><b>03</b><h3>Растущему бизнесу</h3><p>Когда продажи есть, но зависят от отдельных людей и рекомендаций.</p></article>
+          <article class="fit-card reveal"><b>04</b><h3>Новым направлениям</h3><p>Когда нужен быстрый и измеримый выход в новый клиентский сегмент.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">Как работаем</p><h2>Шесть шагов от задачи<br>до работающей системы</h2></div>
+        <ol class="process-list">
+          <li class="reveal"><span>1</span><div><h3>Знакомство</h3><p>Фиксируем задачу, продукт и цель.</p></div></li>
+          <li class="reveal"><span>2</span><div><h3>Анализ</h3><p>Проверяем рынок, аудиторию и конкурентов.</p></div></li>
+          <li class="reveal"><span>3</span><div><h3>Стратегия</h3><p>Собираем гипотезы, оффер и метрики.</p></div></li>
+          <li class="reveal"><span>4</span><div><h3>Запуск</h3><p>Включаем каналы и первые касания.</p></div></li>
+          <li class="reveal"><span>5</span><div><h3>Оптимизация</h3><p>Улучшаем конверсию по данным.</p></div></li>
+          <li class="reveal"><span>6</span><div><h3>Рост</h3><p>Масштабируем то, что доказало результат.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="pilot">
+      <div class="container">
+        <div class="pilot-panel reveal">
+          <div><p class="eyebrow">Формат старта</p><h2>Пилот продаж<br>на <span>30 дней</span></h2><p>Выбираем один сегмент, создаём предложение, формируем базу и проверяем спрос на реальных компаниях.</p><a class="button button-primary" href="#contacts">Оставить заявку <span>→</span></a></div>
+          <ul><li><i>✓</i><span><strong>Быстрый старт</strong>Запуск от 3 рабочих дней</span></li><li><i>✓</i><span><strong>Проверенные гипотезы</strong>Тестируем оффер и каналы</span></li><li><i>✓</i><span><strong>Прозрачный результат</strong>Воронка и понятные метрики</span></li><li><i>✓</i><span><strong>Решение по фактам</strong>Что усиливать, менять или закрывать</span></li></ul>
+          <div class="pilot-result"><h3>Что будет через 30 дней</h3><p>Проверенный сегмент и оффер</p><p>Настроенная воронка</p><p>История реальных коммуникаций</p><p>Первые предметные переговоры</p><p>План следующего шага</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">Команда</p><h2>Специалисты и ИИ-агенты.<br>Результат контролирует человек</h2><p>Автоматизация ускоряет работу, но не подменяет ответственность.</p></div>
+        <div class="team-grid">
+          <article class="team-card reveal"><span>А</span><h3>Алиса</h3><b>Исследование</b><p>Рынок, сегменты, конкуренты и клиентские гипотезы.</p></article>
+          <article class="team-card reveal"><span>М</span><h3>Марк</h3><b>Продажи</b><p>Предложения, коммуникация и ведение клиентских диалогов.</p></article>
+          <article class="team-card reveal"><span>Р</span><h3>Роман</h3><b>Контроль качества</b><p>Проверка фактов, обещаний, материалов и результатов.</p></article>
+          <article class="team-card reveal"><span>В</span><h3>Василий</h3><b>Технологии</b><p>Инфраструктура, CRM, лендинги и техническая реализация.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacts">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-copy"><p class="eyebrow">Давайте знакомиться</p><h2>Есть продукт,<br>но не хватает<br>системных продаж?</h2><p>Расскажите о задаче — оценим вводные и предложим формат проверки.</p><div class="direct-contacts"><a href="mailto:sales@a-vjuh.ru">✉ sales@a-vjuh.ru</a><a href="https://t.me/vasbotovich_bot" target="_blank" rel="noopener">➤ @vasbotovich_bot</a></div></div>
+          <form id="contact-form">
+            <div class="form-row"><label>Ваше имя<input name="name" autocomplete="name" required></label><label>Компания<input name="company" autocomplete="organization"></label></div>
+            <label>Как с вами связаться<input name="contact" autocomplete="email" placeholder="Телефон, email или Telegram" required></label>
+            <label>Расскажите о задаче<textarea name="message" rows="5" required></textarea></label>
+            <button class="button button-primary" type="submit">Подготовить письмо <span>→</span></button>
+            <p class="form-note">Кнопка откроет ваше почтовое приложение с заполненным письмом.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner"><div><a class="logo" href="#top">ВЖУХ<span>↗</span></a><p>Агентство, которое помогает бизнесу расти через систему продаж.</p></div><div><b>Связаться</b><a href="mailto:sales@a-vjuh.ru">sales@a-vjuh.ru</a><a href="https://t.me/vasbotovich_bot" target="_blank" rel="noopener">Telegram Василия</a></div><div><b>Навигация</b><a href="#services">Что делаем</a><a href="#process">Как работаем</a><a href="#pilot">Пилот</a></div></div>
+    <div class="container copyright"><span>© 2026 Агентство «Вжух»</span><span>Продажи без магии. Хотя выглядит похоже.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
