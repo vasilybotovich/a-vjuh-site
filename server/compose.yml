@@ -1,0 +1,27 @@
+name: a-vjuh-contact
+
+services:
+  contact-api:
+    build: .
+    container_name: a-vjuh-contact-api
+    restart: unless-stopped
+    environment:
+      CRM_URL: https://sm.a-vjuh.ru/api/mcp/mcp
+    secrets:
+      - crm_token
+    networks:
+      edge:
+        aliases: [a-vjuh-contact-api]
+    mem_limit: 128m
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: [no-new-privileges:true]
+
+networks:
+  edge:
+    external: true
+    name: nextcrm-edge
+
+secrets:
+  crm_token:
+    file: /home/nextcrm/secrets/a-vjuh-contact-crm.token

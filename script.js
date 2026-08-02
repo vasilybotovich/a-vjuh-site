@@ -34,17 +34,32 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach((node) => observer.observe(node));
 
-document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
+document.querySelector('#contact-form')?.addEventListener('submit', async (event) => {
   event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  const subject = `Заявка с a-vjuh.ru — ${data.get('company') || data.get('name')}`;
-  const body = [
-    `Имя: ${data.get('name')}`,
-    `Компания: ${data.get('company') || 'не указана'}`,
-    `Контакт: ${data.get('contact')}`,
-    '',
-    'Задача:',
-    data.get('message')
-  ].join('\n');
-  window.location.href = `mailto:sales@a-vjuh.ru?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const form = event.currentTarget;
+  const button = form.querySelector('button[type="submit"]');
+  const status = form.querySelector('#form-status');
+  const data = Object.fromEntries(new FormData(form));
+  button.disabled = true;
+  button.firstChild.textContent = 'Отправляем… ';
+  status.textContent = 'Передаём заявку команде.';
+  status.className = 'form-note';
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(result.error || 'Не удалось отправить заявку');
+    form.reset();
+    status.textContent = 'Спасибо! Заявка отправлена. Мы свяжемся с вами.';
+    status.className = 'form-note form-success';
+  } catch (error) {
+    status.textContent = `${error.message}. Напишите нам: sales@a-vjuh.ru`;
+    status.className = 'form-note form-error';
+  } finally {
+    button.disabled = false;
+    button.firstChild.textContent = 'Отправить заявку ';
+  }
 });
