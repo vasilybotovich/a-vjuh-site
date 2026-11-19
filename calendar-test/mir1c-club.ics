@@ -7,14 +7,20 @@ X-WR-CALNAME:Тест подписки — клуб Мир 1С
 X-WR-TIMEZONE:Europe/Moscow
 BEGIN:VEVENT
 UID:mir1c-test-20261120-market@calendar.vjuh
-DTSTAMP:20261119T184100Z
+DTSTAMP:20261119T184956Z
 DTSTART:20261120T140000Z
 DTEND:20261120T150000Z
 SUMMARY:ТЕСТ — встреча клуба «Мир 1С»
-DESCRIPTION:Тестовое событие для проверки имп
+DESCRIPTION:Тестовое событие для проверки обн
+ овления календаря. Повестка: рынок труда
+  в 1С и ход проектов. Тестовая ссылка на Т
+ елемост из предыдущей встречи: https://telemost.
+ yandex.ru/j/8178218740
  орта и обновления календаря. Повестка по
   мотивам прошлой встречи: рынок труда в 1
  С и как идут проекты.
+SEQUENCE:1
+URL:https://telemost.yandex.ru/j/8178218740
 STATUS:CONFIRMED
 END:VEVENT
 END:VCALENDAR
